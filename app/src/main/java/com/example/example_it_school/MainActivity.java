@@ -2,6 +2,8 @@ package com.example.example_it_school;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -13,12 +15,25 @@ public class MainActivity extends AppCompatActivity {
 
     EditText object_a, object_b, object_c;
     TextView result;
+    MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+
+    public void playMusic(View v) {
+        if(v.getId() == R.id.start) {
+            mp = MediaPlayer.create(MainActivity.this, R.raw.betkhoven);
+            mp.start();
+        } else {
+            mp.stop(); // остановка
+            mp.release(); // освобождаем ресурсы
+        }
+    }
+
 
     public void solve(View v) {
 

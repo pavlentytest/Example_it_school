@@ -5,4 +5,6 @@
     <string name="koeff_a">Коэффициент А</string>
     <string name="koeff_b">Коэффициент B</string>
     <string name="koeff_c">Коэффициент C</string>
+    <string name="play">Старт</string>
+    <string name="stop">Стоп</string>
 </resources>
