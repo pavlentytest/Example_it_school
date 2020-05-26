@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Example_it_school</string>
+    <string name="solve">Решить</string>
+    <string name="reset">Сбросить</string>
+    <string name="koeff_a">Коэффициент А</string>
+    <string name="koeff_b">Коэффициент B</string>
+    <string name="koeff_c">Коэффициент C</string>
+</resources>
